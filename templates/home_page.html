@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>WallaceCapitalBFA</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+        <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <style>
+            .hoover {
+                width: 210;
+                height: 210px;
+                overflow: hidden;
+                margin: black;
+            }
+         
+            .hoover img {
+                height: 200;
+                width: 200;
+                margin: black;
+                transition: 0.5s all ease-in-out;
+            }
+         
+            .hoover:hover img {
+                transform: scale(1.25);
+            }
+        </style>
+
+
+	</head>
+    <body>
+        <div class="center" >
+            <h1><img src="{{url_for('static', filename='images/wc.jpeg')}}" alt="logo" width="150" height="150" /> Business Funding Analysis</h1>
+            </div>
+         <div class="panel panel-default" >
+            <div class="panel-body">
+                <div class="panel-body">
+            
+
+            <div class="center">
+                <div class="row">
+                    <div class="col-sm-6 nopadding">
+                        <div class="hoover">
+                        <a href="{{url_for('list_data')}}">
+        <img src="{{url_for('static', filename='images/existing.png')}}" alt="logo" width="200" height="200"/>
+                        </a>
+                    </div>
+        <h4 class="first-txt">
+            Existing Clients
+        </h4>
+            </div> 
+
+            <div class="col-sm-6 nopadding">
+<div class="hoover">
+                <a href="{{url_for('home')}}">
+                <img src="{{url_for('static', filename='images/new.png')}}" alt="logo" width="170" height="170"  />
+            </a>
+</div>
+                <h4 class="first-txt">
+                    New Clients
+                </h4>
+                    </div> 
+                </div>
+            </div>
+                </div>
+                </div>
+         </div>
+    </body>
+</html>
+
+<!-- style='border:1px solid #000000' -->
